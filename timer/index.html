@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="clock">
+            <div class="insideClock">
+                <span id="time"></span>
+            </div>
+        </div>
+    </header>
+    <nav> 
+        <div class="arrow">☰</div>
+        <div class="navTitle">
+           <h1>Settings</h1>
+        </div>
+        <div class="list">
+            <ul>
+                <a onclick="timer()"><li style="border-top: 1px solid black;">Timer</li></a>
+                <a onclick="stopWatch()"><li>StopWatch</li></a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="content">
+            <div class="divTitle">
+                <h1 id="title">Timer</h1>
+            </div>
+            <div class="inputs">
+                <input type="text" id="HH" onkeyup="filterValue(event)" autocomplete="none" value="0">
+                <input type="text" id="mm" onkeyup="filterValue(event)" autocomplete="none" value="0">
+                <input type="text" id="ss" onkeyup="filterValue(event)" autocomplete="none" value="0">
+                <input type="text" id="ms" onkeyup="filterValue(event)" autocomplete="none" value="0">
+            </div>
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button onclick="stopTimer()" id="stop" style="display:none;">Stop</button>
+                <button onclick="reset()" id="reset" style="display:none;">Reset</button>
+                <button onclick="turn()" id="turn" style="display:none;">Turn</button>
+            </div>
+
+            
+        </div>
+    </main>
+    <div class="turn">
+        <ul id="ulTurn"></ul>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
