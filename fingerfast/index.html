@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>FingerFast</title>
+</head>
+<body>
+    <main>
+        <div class="show-text">
+            <div class="div-text" id="div-text">
+            </div>
+        </div>
+        
+        <div class="container-tools">
+            <div class="div-input">
+                <input type="text" id="input" onkeyup="start(event)" autocomplete="none" autocapitalize="none" >
+            </div>
+            <div class="div-button">
+                <button onclick="newGame()"><i class="material-icons">sync</i></button>
+            </div>
+            <div class="div-timer" onclick="toggleTimer(this)">
+                <span id="timer">60</span>
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="result-header"><h3>Result</h3></div>
+            <div class="result-info">
+                <table>
+                    <tr id="grade">
+                        <td id="value" colspan="2"></td>
+                    </tr>
+                    <tr id = "keystroke" >
+                        <td id="name"></td>
+                        <td id="value"></td>
+                    </tr>
+                    <tr id = "accuracy" >
+                        <td id="name"></td>
+                        <td id="value"></td>
+                    </tr>
+                    <tr id = "correct" >
+                        <td id="name"></td>
+                        <td id="value"></td>
+                    </tr>
+                    <tr id = "wrong" >
+                        <td id="name"></td>
+                        <td id="value"></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

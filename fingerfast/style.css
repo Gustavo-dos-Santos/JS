@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #bdddfe;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+div.show-text{
+    margin-top: 10px;
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+
+    width: 50%;    
+    min-width: 350px ;
+    height: 100px;
+
+    overflow: hidden;
+}
+
+div.div-text{
+    position: relative;
+
+    font-size: 1.6em;
+}
+
+div.div-text > span{
+    display: inline-block;
+    padding: 5px;
+}
+
+div.container-tools{
+
+    margin-top: 10px;
+
+    background-color: #a7c8e7;
+    border-radius: 7px;
+
+    width: 50%;    
+    min-width: 350px ;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+div.div-input{
+    margin-right: 5px;
+    width: 40% ;
+    min-width: 190px;
+    height: 80%;
+
+}
+
+div.div-button{
+    width: 10% ;
+    min-width: 60px;
+    height: 80%;
+
+}
+
+div.div-timer{
+    margin-left: 5px;
+    font-size: 1.4em;
+    
+    width: 10% ;
+    min-width: 60px;
+    height: 80%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #3c4d5c;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+div.results{
+    margin-top: 10px;
+
+    width: 30%;    
+    min-width: 350px ;
+
+    height: 220px;
+
+    font-size: 1.2em;
+}
+
+div.result-header{
+    background-image:linear-gradient(#6cbbff, #3276b1) ;
+    padding: 7px;
+
+    color: white;
+    border-radius: 5px 5px 0 0;
+
+    padding-left: 10px ;
+}
+
+div.result-info{
+    background-color: #f9f9f9;
+}
+
+
+input#input{
+    font-size: 1.4em;
+
+    padding: 0 5px;
+
+    border-radius: 4px;
+
+    outline: none;
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 0 0 2px 0 black;
+}
+
+button{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 2px 0 black;
+
+    background-color: #3276b1;
+
+    cursor: pointer;
+}
+
+span#timer{
+    color: white;
+}
+
+i{
+    color: white;
+}
+
+h3{
+    font-weight: bolder;
+}
+
+table{
+    width: 100%;
+    margin: auto;
+    font-size: 1.0em;
+}
+
+tr{
+    height: 50px;
+}
+
+td#name{
+    padding-left: 10px ;
+
+}
+
+td#value{
+    text-align: center;
+
+}
+
+.correct{
+    color: green;
+}
+
+.wrong{
+    color: red;
+}
+
+.focus{
+    background-color: #dddddd;
+    color: black;
+}
